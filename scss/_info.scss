@@ -5,6 +5,7 @@
     padding-top: 63px;
     font-size: 3.2rem;
     font-weight: bold;
+    font-family: $fstyle;
     text-align: center;
     color: #fff;
     @include sp {
@@ -15,6 +16,7 @@
     font-size: 1.6rem;
     color: #fff;
     text-align: center;
+    font-family: $fstyle;
     margin-top: 15px;
     font-weight: bold;
     @include sp {
@@ -25,6 +27,7 @@
     font-size: 1.6rem;
     color: #fff;
     text-align: center;
+    font-family: $fstyle;
     margin-top: 36px;
     font-weight: bold;
     @include sp {
@@ -66,6 +69,7 @@ form{
         margin-left: 23px;
         font-size: 1.4rem;
         font-weight: bold;
+        font-family: $fstyle;
         color: #fff;
         background: #0C449B 0% 0% no-repeat padding-box;
         border-radius: 10px;
@@ -113,6 +117,7 @@ form{
     margin-top: 27px;
     font-size: 1.6rem;
     font-weight: bold;
+    font-family: $fstyle;
     text-align: center;
     color: #333;
     @include sp {
@@ -132,6 +137,7 @@ form{
     font-size: 1.4rem;
     font-weight: bold;
     color: white;
+    font-family: $fstyle;
     margin-top: 30px;
     display: flex;
     justify-content: center;

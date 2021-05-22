@@ -14,6 +14,7 @@
         font-weight: bold;
         text-align: center;
         color: #333333;
+        font-family: $fstyle;
         @include sp {
             font-size:2.2rem;
             }
@@ -24,6 +25,7 @@
         text-align: center;
         margin-top: 15px;
         font-weight: bold;
+        font-family: $fstyle;
         @include sp {
             font-size: 1.4rem;
         }
@@ -42,6 +44,7 @@ table{
     margin-top: 70px;
     font-size: 1.6rem;
     color: #333333;
+    font-family: $fstyle;
     @include sp {
         font-size: 1.4rem;
         margin-top: 45px;
@@ -79,6 +82,7 @@ td{
 .price-text{
     font-size: 2.4rem;
     font-weight: bold;
+    font-family: $fstyle;
     color: #444444;
     text-align: center;
     margin-top: 36px;
