@@ -1,0 +1,160 @@
+.info {
+    height: 1027px;
+    background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+    h2{
+    padding-top: 63px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    @include sp {
+        font-size:2.2rem;
+        }
+    }
+    &-p{
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    @include sp {
+        font-size: 1.4rem;
+        }
+    }
+    &-two{
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 36px;
+    font-weight: bold;
+    @include sp {
+        font-size: 1.4rem;
+        }
+    }
+}
+
+form{
+    background-color: #fff;
+    width: 66%;
+    height: 720px;
+    margin: 0 auto;
+    margin-top: 44px;
+    box-shadow: 0px 3px 6px #00000029;
+    @include tab{
+        width: 80%;
+    }
+    @include sp {
+        width: 88%;
+    }
+}
+
+.form-inner{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 35px;
+    &-one{
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #333;
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+    &-two {
+        width: 60px;
+        height: 30px;
+        margin-left: 23px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #fff;
+        background: #0C449B 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include sp {
+            font-size: 1.3rem;
+            margin-left: 18px;
+        }
+    }
+}
+
+.form-text {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form-name,.form-mail{
+    width: 54%;
+    height: 43px;
+    margin-top: 39px;
+    background: #EEFBFB 0% 0% no-repeat padding-box;
+    border-radius: 3px; 
+    border: 0px none;
+    @include sp {
+        margin-top: 30px;
+    }
+}
+
+.form-textarea {
+    width: 96%;
+    height: 179px;
+    margin-top: 39px;
+    background: #EEFBFB 0% 0% no-repeat padding-box;
+    border-radius: 3px; 
+    border: 0px none;
+    @include sp {
+        margin-top: 30px;
+    }
+}
+
+.form-checkbox{
+    margin-top: 27px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    @include sp {
+        font-size: 1.5rem;
+    }
+    input {
+        width: 20px;
+        height: 20px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+    }
+}
+
+.form-submit {
+    width: 155px;
+    height: 37px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    border: 0px none;
+    text-align: center;
+}
+
+.form-two {
+    margin-top: 27px;
+}
+
+.form-three {
+    margin-top: 21px;
+}
+
+.form-none {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
