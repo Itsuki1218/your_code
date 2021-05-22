@@ -191,6 +191,7 @@ nav{
     justify-content: space-between;
     li {
         font-size: 1.6rem;
+        font-family: $fstyle;
         font-weight: bold;
         color: #333333;
     }
@@ -207,6 +208,7 @@ nav{
         display: flex;
         justify-content: center;
         font-size: 1.4rem;
+        font-family: $fstyle;
         color: white;
         font-weight: bold;
     }
