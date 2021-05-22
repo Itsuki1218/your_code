@@ -1,0 +1,232 @@
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+     @include tab{
+         /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+         position:fixed;
+         z-index: 99;
+         /*ナビのスタート位置と形状*/
+         top:-120%;
+         left:0;
+         width:100%;
+         height: 100vh;/*ナビの高さ*/
+         background:#999;
+         /*動き*/
+         transition: all 0.6s;
+     }
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    @include tab{
+        top: 0;
+    }
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    @include tab{
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 99; 
+        width: 100%;
+        height: 80vh;/*表示する高さ*/
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    @include tab{
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 99;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+    @include tab{
+        list-style: none;
+        text-align: center; 
+        height: 60px;
+    }
+}
+
+#g-nav li a{
+    @include tab{
+        color: #fff;
+        text-decoration: none;
+        padding:10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+    @include tab {
+        position:fixed;
+        z-index: 999;/*ボタンを最前面に*/
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    }
+}
+	
+/*×に変化*/	
+.openbtn span{
+    @include tab {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+          width: 45%;
+    }
+  }
+
+.openbtn span:nth-of-type(1) {
+	top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+
+//ここから自分
+
+body {
+    padding-top: 94px;
+}
+
+
+header {
+    background-color: #fff;
+    top:0px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 94px;
+    line-height: 94px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.header-wrap{
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    @include ex{
+        width: 85%;
+    }
+    @include sp {
+        width: 90%;
+    }
+}
+
+.header-title{
+    display: flex;
+    align-items: center;
+    img{
+        height: 47px;
+        @include sp{
+            height: 35px;
+        }
+    }
+    h1{
+        font-family: $fstyle;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #333333;
+        @include sp {
+            font-size: 2rem;
+        }
+    }
+}
+
+nav{
+    width: 24%;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: space-between;
+    li {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #333333;
+    }
+}
+
+.header-btn{
+    width: 15%;
+    height: 37px;
+    line-height: 37px;
+    background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    a{
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: white;
+        font-weight: bold;
+    }
+    @include tab{
+        display: none;
+    }
+}
+
+
+
+//アンカーリンク調整
+.link-t-a {
+position: relative;
+top: -150px;
+display: block;
+}
+
+.link-t-b {
+position: relative;
+top: -94px;
+display: block;
+}
+

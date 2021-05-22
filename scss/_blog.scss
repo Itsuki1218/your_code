@@ -1,0 +1,134 @@
+.blog{
+    height: 668px;
+    background-color: #EEFBFB;
+    @include tab{
+        height: 1600px;
+    }
+        h2{
+        padding-top: 55px;
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+        color: #333333;
+        @include sp {
+            font-size:2.2rem;
+            }
+        }
+        &-p{
+        font-size: 1.6rem;
+        color: #3BA6C9;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+.blog-box {
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @include tab{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.blog-box-one {
+    position: relative;
+    width: 32%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 54px;
+    box-shadow: 0px 3px 6px #00000029;
+    @include tab{
+        width: 60%;
+        height: 450px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    @include sp {
+        width: 80%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.blog-box-two {
+    position: relative;
+    width: 32%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 54px;
+    box-shadow: 0px 3px 6px #00000029;
+     @include tab{
+        width: 60%;
+        margin: 0 auto;
+        height: 450px;
+        margin-top: 30px;
+    }
+    @include sp {
+        width: 80%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.blog-box-three {
+    position: relative;
+    width: 32%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 54px;
+    box-shadow: 0px 3px 6px #00000029;
+    @include tab{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 30px;
+        height: 450px;
+    }
+    @include sp {
+        width: 80%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.blog-text-intro{
+    font-size: 1.8rem;
+    font-style: $fstyle;
+    font-weight: bold;
+    color: #333333;
+    @include sp {
+        font-size: 1.6rem;
+    }
+    @include small {
+        padding-top: 30px;
+    }
+}
+
+.blog-text-sch{
+    font-size: 1.6rem;
+    font-style: $fstyle;
+    font-weight: bold;
+    position: absolute;
+    top: 90%;
+    right: 12%;
+    color: #333333;
+    @include sp {
+        font-size: 1.4rem;
+    }
+
+}
+
+.blog-wrap{
+    padding: 14px 31px 87px 18px;
+}

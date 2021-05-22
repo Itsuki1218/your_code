@@ -1,0 +1,88 @@
+.price {
+    height: 744px;
+    background-color: #EEFBFB;
+    padding-top: 55px;
+    @include ex {
+        margin-top: 700px;
+        height: 800px;
+        @include sp {
+            margin-top: 350px;
+        }
+    }
+        h2{
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+        color: #333333;
+        @include sp {
+            font-size:2.2rem;
+            }
+        }
+        &-p{
+        font-size: 1.6rem;
+        color: #3BA6C9;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.price-inner{
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+}
+
+table{
+    width: 100%;
+    margin-top: 70px;
+    font-size: 1.6rem;
+    color: #333333;
+    @include sp {
+        font-size: 1.4rem;
+        margin-top: 45px;
+    }
+}
+
+th{
+    width: 35%;
+    padding: 43px 24px 43px 19px;
+    font-weight: bold;
+    border: 1px solid #E5E5E5;
+    color: #333333;
+    @include sp {
+        width: 100%;
+        display: block;
+        padding: 20px 40px;
+        border-bottom: 1px dotted #E5E5E5; 
+    }
+}
+
+td{
+    width: 65%;
+    padding-left: 20px;
+    font-weight: bold;
+    border: 1px solid #E5E5E5;
+    color: #333333;
+    @include sp {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 40px;
+    }
+}
+
+.price-text{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #444444;
+    text-align: center;
+    margin-top: 36px;
+    @include tab {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,42 @@
+footer{
+    height: 244px;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    text-align: center;
+    h3{
+        padding-top: 43px;
+        font-size: 2.4rem;
+        color: #333;
+        font-weight: bold;
+        @include sp {
+            font-size: 2rem;
+        }
+    }
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 30px;
+    @include sp {
+        font-size: 1.2rem;
+    }
+    &-one{
+        font-weight: bold;
+    }
+    &-two{
+        font-weight: bold;
+        margin-left: 29px;
+    }
+}
+
+.footer-last{
+    margin-top: 65px;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: lighter;
+    @include sp {
+        font-size: 1.2rem;
+    }
+}
