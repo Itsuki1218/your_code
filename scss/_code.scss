@@ -35,10 +35,10 @@
     margin: 0 auto;
     @include ex{
         width: 85%;
-        @include sp{
-            width: 94%;
-        }
     }
+        @include sp{
+            width: 98%;
+        }
 }
 
 //一つ目
@@ -97,8 +97,11 @@
             font-family: $fstyle;
             line-height: 1.2;
             @include sp {
-                font-size: 1.2rem;
+                font-size: 14px;
                 line-height: 1.5;
+            }
+            @include small {
+                font-size: 12px;
             }
         }
     }
@@ -166,10 +169,12 @@
             font-family: $fstyle;
             line-height: 1.4;
             @include sp {
-                font-size: 1.1rem;
+                font-size: 14px;
                 line-height: 1.5;
             }
-
+            @include small {
+                font-size: 12px;
+            }
         }
     }
 }
@@ -239,8 +244,11 @@
             font-family: $fstyle;
             line-height: 1.2;
             @include sp {
-                font-size: 1.3rem;
+                font-size: 14px;
                 line-height: 1.5;
+            }
+            @include small {
+                font-size: 12px;
             }
         }
     }

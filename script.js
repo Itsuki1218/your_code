@@ -30,16 +30,13 @@ $(function () {
 /////////////アコーディオン///////////
 //アコーディオンをクリックした時の動作
 $('.title').on('click', function () {//タイトル要素をクリックしたら
-    $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
-
-    var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+    var findElm = $(this).next(".box");//直後のアコーディオンを行うエリアを取得し
+    $(findElm).slideToggle();//アコーディオンの上下動作
 
     if ($(this).hasClass('close')) {//タイトル要素にクラス名closeがあれば
-        $(this).removeClass('close');//クラス名を除去    
+        $(this).removeClass('close');//クラス名を除去し
     } else {//それ以外は
-        $('.close').removeClass('close'); //クラス名closeを全て除去した後
-        $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
-        $(findElm).slideDown(500);//アコーディオンを開く
+        $(this).addClass('close');//クラス名closeを付与
     }
 });
 
@@ -48,34 +45,24 @@ $(window).on('load', function () {
     $('.accordion-area li:first-of-type div').addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
     $(".open").each(function (index, element) {	//openクラスを取得
         var Title = $(element).children('.title');	//openクラスの子要素のtitleクラスを取得
-        $(Title).addClass('close');				///タイトルにクラス名closeを付与し
+        $(Title).addClass('close');				//タイトルにクラス名closeを付与し
         var Box = $(element).children('.box');	//openクラスの子要素boxクラスを取得
         $(Box).slideDown(500);					//アコーディオンを開く
     });
 });
 
 
-////////////swiper//////////////////
 
+////////////swiper//////////////////
 const mySwiper = new Swiper('.swiper-container', {
-    loop: true,        //画像のループ
-    effect: 'slide',   //切り替わるときのアニメーション
-    speed: 3000,       //画像の切替スピード
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 3.5,
-    spaceBetween: 40,
-    autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-        reverseDirection: false
-    },
-    pagination: '.swiper-pagination',
+    paginationClickable: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
+    loop: true,        //画像のループ
+    speed: 3000,       //画像の切替スピード
+    autoplay: 3000,
+    slidesPerView: 3.5,
+    spaceBetween: 40,
     breakpoints: {
         1500: {
             slidesPerView: 3,
@@ -94,6 +81,15 @@ const mySwiper = new Swiper('.swiper-container', {
             spaceBetween: 10
         }
     }
-})
+});
 
 
+// 基本の記述
+$(function () {
+    $("body").niceScroll();
+});
+
+// // カーソル色の変更
+// $(function () {
+//     $("#thisdiv").niceScroll({ cursorcolor: "#00F" });
+// });

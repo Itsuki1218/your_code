@@ -1,11 +1,6 @@
 .acc{
-    height: 586px;
-    @include tab{
-        height: 500px;
-    }
-    @include sp {
-        height: 450px;
-    }
+    height: 100%;
+    margin-bottom: 86px;
         h2{
         margin-top:55px;
         font-size: 3.2rem;
@@ -47,7 +42,7 @@
 }
 
 .accordion-area li{
-    margin: 10px 0;
+    margin:0;
 }
 
 .accordion-area div {
@@ -115,7 +110,7 @@
 .box {
     display: none;/*はじめは非表示*/
     background: #f3f3f3;
-	margin:0 3% 3% 3%;
+	margin:0;
     padding: 3%;
 }
 

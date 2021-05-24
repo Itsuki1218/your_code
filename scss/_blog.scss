@@ -31,7 +31,7 @@
 
 .blog-box {
     width: 95%;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -48,14 +48,15 @@
     background-color: #fff;
     margin-top: 54px;
     box-shadow: 0px 3px 6px #00000029;
+    line-height: 1.2;
     @include tab{
-        width: 60%;
+        width: 500px;
         height: 450px;
         margin: 0 auto;
         margin-top: 30px;
     }
     @include sp {
-        width: 80%;
+        width: 90%;
     }
     img{
         width: 100%;
@@ -69,14 +70,15 @@
     background-color: #fff;
     margin-top: 54px;
     box-shadow: 0px 3px 6px #00000029;
+    line-height: 1.2;
      @include tab{
-        width: 60%;
+        width: 500px;
         margin: 0 auto;
         height: 450px;
         margin-top: 30px;
     }
     @include sp {
-        width: 80%;
+        width: 90%;
     }
     img{
         width: 100%;
@@ -90,14 +92,15 @@
     background-color: #fff;
     margin-top: 54px;
     box-shadow: 0px 3px 6px #00000029;
+    line-height: 1.2;
     @include tab{
-        width: 60%;
+        width: 500px;
         margin: 0 auto;
         margin-top: 30px;
         height: 450px;
     }
     @include sp {
-        width: 80%;
+        width: 90%;
     }
     img{
         width: 100%;
@@ -111,6 +114,7 @@
     color: #333333;
     @include sp {
         font-size: 1.6rem;
+        line-height: 1.8;
     }
     @include small {
         padding-top: 30px;
@@ -122,7 +126,7 @@
     font-style: $fstyle;
     font-weight: bold;
     position: absolute;
-    top: 90%;
+    top: 92%;
     right: 12%;
     color: #333333;
     @include sp {

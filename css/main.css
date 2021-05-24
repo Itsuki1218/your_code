@@ -197,7 +197,6 @@ html {
     position: fixed;
     z-index: 999;
     /*ボタンを最前面に*/
-    top: 10px;
     right: 10px;
     cursor: pointer;
     width: 50px;
@@ -299,6 +298,7 @@ header {
   font-size: 2.4rem;
   font-weight: bold;
   color: #333333;
+  margin-left: 16px;
 }
 @media screen and (max-width: 600px) {
   .header-title h1 {
@@ -307,7 +307,8 @@ header {
 }
 
 nav {
-  width: 24%;
+  width: 28%;
+  margin-right: 16%;
 }
 
 .nav-list ul {
@@ -319,10 +320,16 @@ nav {
   font-family: Noto Sans JP;
   font-weight: bold;
   color: #333333;
+  margin-left: 16px;
+}
+@media screen and (max-width: 1130px) {
+  .nav-list ul li {
+    margin-left: 10px;
+  }
 }
 
 .header-btn {
-  width: 15%;
+  width: 155px;
   height: 37px;
   line-height: 37px;
   background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
@@ -369,6 +376,7 @@ nav {
 
 .top-wrap {
   width: 77%;
+  max-width: 1024px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -494,9 +502,9 @@ nav {
     width: 85%;
   }
 }
-@media screen and (max-width: 1130px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .code-content {
-    width: 94%;
+    width: 98%;
   }
 }
 
@@ -564,8 +572,13 @@ nav {
 }
 @media screen and (max-width: 600px) {
   .code-one-box-msg p {
-    font-size: 1.2rem;
+    font-size: 14px;
     line-height: 1.5;
+  }
+}
+@media screen and (max-width: 450px) {
+  .code-one-box-msg p {
+    font-size: 12px;
   }
 }
 
@@ -639,8 +652,13 @@ nav {
 }
 @media screen and (max-width: 600px) {
   .code-two-box-msg p {
-    font-size: 1.1rem;
+    font-size: 14px;
     line-height: 1.5;
+  }
+}
+@media screen and (max-width: 450px) {
+  .code-two-box-msg p {
+    font-size: 12px;
   }
 }
 
@@ -718,8 +736,13 @@ nav {
 }
 @media screen and (max-width: 600px) {
   .code-three-box-msg p {
-    font-size: 1.3rem;
+    font-size: 14px;
     line-height: 1.5;
+  }
+}
+@media screen and (max-width: 450px) {
+  .code-three-box-msg p {
+    font-size: 12px;
   }
 }
 
@@ -847,17 +870,8 @@ td {
 }
 
 .acc {
-  height: 586px;
-}
-@media screen and (max-width: 959px) {
-  .acc {
-    height: 500px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .acc {
-    height: 450px;
-  }
+  height: 100%;
+  margin-bottom: 86px;
 }
 .acc h2 {
   margin-top: 55px;
@@ -899,7 +913,7 @@ td {
 }
 
 .accordion-area li {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .accordion-area div {
@@ -971,7 +985,7 @@ td {
   display: none;
   /*はじめは非表示*/
   background: #f3f3f3;
-  margin: 0 3% 3% 3%;
+  margin: 0;
   padding: 3%;
 }
 
@@ -1013,7 +1027,7 @@ td {
 
 .blog-box {
   width: 95%;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1032,10 +1046,11 @@ td {
   background-color: #fff;
   margin-top: 54px;
   box-shadow: 0px 3px 6px #00000029;
+  line-height: 1.2;
 }
 @media screen and (max-width: 959px) {
   .blog-box-one {
-    width: 60%;
+    width: 500px;
     height: 450px;
     margin: 0 auto;
     margin-top: 30px;
@@ -1043,7 +1058,7 @@ td {
 }
 @media screen and (max-width: 600px) {
   .blog-box-one {
-    width: 80%;
+    width: 90%;
   }
 }
 .blog-box-one img {
@@ -1057,10 +1072,11 @@ td {
   background-color: #fff;
   margin-top: 54px;
   box-shadow: 0px 3px 6px #00000029;
+  line-height: 1.2;
 }
 @media screen and (max-width: 959px) {
   .blog-box-two {
-    width: 60%;
+    width: 500px;
     margin: 0 auto;
     height: 450px;
     margin-top: 30px;
@@ -1068,7 +1084,7 @@ td {
 }
 @media screen and (max-width: 600px) {
   .blog-box-two {
-    width: 80%;
+    width: 90%;
   }
 }
 .blog-box-two img {
@@ -1082,10 +1098,11 @@ td {
   background-color: #fff;
   margin-top: 54px;
   box-shadow: 0px 3px 6px #00000029;
+  line-height: 1.2;
 }
 @media screen and (max-width: 959px) {
   .blog-box-three {
-    width: 60%;
+    width: 500px;
     margin: 0 auto;
     margin-top: 30px;
     height: 450px;
@@ -1093,7 +1110,7 @@ td {
 }
 @media screen and (max-width: 600px) {
   .blog-box-three {
-    width: 80%;
+    width: 90%;
   }
 }
 .blog-box-three img {
@@ -1109,6 +1126,7 @@ td {
 @media screen and (max-width: 600px) {
   .blog-text-intro {
     font-size: 1.6rem;
+    line-height: 1.8;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1122,7 +1140,7 @@ td {
   font-style: Noto Sans JP;
   font-weight: bold;
   position: absolute;
-  top: 90%;
+  top: 92%;
   right: 12%;
   color: #333333;
 }
