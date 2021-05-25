@@ -85,9 +85,9 @@ const mySwiper = new Swiper('.swiper-container', {
 
 
 // 基本の記述
-$(function () {
-    $("body").niceScroll();
-});
+// $(function () {
+//     $("body").niceScroll();
+// });
 
 // // カーソル色の変更
 // $(function () {
